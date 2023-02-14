@@ -11,7 +11,7 @@ import TortaData from './TortaData.dto';
       host: 'localhost',
       username: 'root',
       password: '',
-      database: 'database',
+      database: 'Tortak',
       entities: [TortaData],
       synchronize: true,
     }),

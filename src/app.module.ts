@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import TortaData from './TortaData.dto';
 
 @Module({
   imports: [
@@ -11,9 +12,7 @@ import { AppService } from './app.service';
       username: 'root',
       password: '',
       database: 'database',
-      entities: [
-        /* List of entities here */
-      ],
+      entities: [TortaData],
       synchronize: true,
     }),
   ],
